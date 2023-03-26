@@ -40,7 +40,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <main>
-      <HashRouter router={router}></HashRouter>
+      <RouterProvider router={router}></RouterProvider>
     </main>
   );
 }
