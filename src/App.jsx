@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider ,HashRouter} from "react-router-dom";
 import Home from "./components/homecomponets/Home";
 import Movies from "./components/moviescomponent/Movies";
 import Sport from "./components/sportcomponents/Sport";
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <main>
-      <RouterProvider router={router}></RouterProvider>
+      <HashRouter router={router}></HashRouter>
     </main>
   );
 }
