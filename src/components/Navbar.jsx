@@ -15,19 +15,19 @@ export default function Navbar() {
       <div className="navbar  max-lg:hidden">
         <ul className="flex gap-5">
           <li>
-            <a href="/">HOME</a>
+            <Link href="/">HOME</Link>
           </li>
           <li>
-            <a href="/movies">MOVIES</a>
+            <Link href="/movies">MOVIES</Link>
           </li>
           <li>
-            <a href="/sports">SPORTS</a>
+            <Link href="/sports">SPORTS</Link>
           </li>
           <li>
-            <a href="/concerts">CONCERTS</a>
+            <Link href="/concerts">CONCERTS</Link>
           </li>
           <li>
-            <a href="/spacials">SPECIAL EVENTS</a>
+            <Link href="/spacials">SPECIAL EVENTS</Link>
           </li>
         </ul>
       </div>
@@ -46,19 +46,19 @@ export default function Navbar() {
           className={`${visiblity ? "visible": "hidden" } flex flex-col space-y-5 relative bg-gray-500 p-7 rounded-lg`}
         >
           <li>
-            <a href="/">HOME</a>
+            <Link href="/">HOME</Link>
           </li>
           <li>
-            <a href="/movies">MOVIES</a>
+            <Link href="/movies">MOVIES</Link>
           </li>
           <li>
-            <a href="/sports">SPORTS</a>
+            <Link href="/sports">SPORTS</Link>
           </li>
           <li>
-            <a href="/concerts">CONCERTS</a>
+            <Link href="/concerts">CONCERTS</Link>
           </li>
           <li>
-            <a href="/spacials">SPECIAL EVENTS</a>
+            <Link href="/spacials">SPECIAL EVENTS</Link>
           </li>
         </ul>
       </div>
