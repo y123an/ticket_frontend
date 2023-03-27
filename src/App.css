@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+h1 {
+  font-family: 'Alkatra',"Raleway", sans-serif;
+}
+
+a{
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+}

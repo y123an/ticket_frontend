@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [visiblity, setVisiblity] = useState(false);
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
   return (
     <div className="flex justify-around p-10 sticky top-0 bg-white ">
-      <div className="logo flex gap-3">
+      <div className="logo flex gap-3 text-2xl">
         <img src={logo} alt="logo" className="h-7 w-7" />
         <h1>KURET</h1>
       </div>
@@ -32,7 +32,7 @@ export default function Navbar() {
         </ul>
       </div>
 
-      <div className="menu lg:hidden mr-[10%] max-sm:mr-[50%] absolute">
+      <div className="menu lg:hidden mr-[10%] max-sm:mr-[50%] ">
         <button
           className="relative left-32"
           onClick={() => {
@@ -43,7 +43,7 @@ export default function Navbar() {
           <Link to="">{menu ? "Menu" : "Close"}</Link>
         </button>
         <ul
-          className={`${visiblity ? "visible": "hidden" } flex flex-col space-y-5 relative bg-gray-500 p-7 rounded-lg`}
+          className={`${visiblity ? "visible": "hidden" } flex flex-col space-y-5 relative bg-gray-500 p-7 rounded-lg relative left-32`}
         >
           <li>
             <Link to="/">HOME</Link>
