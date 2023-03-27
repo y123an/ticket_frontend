@@ -35,7 +35,7 @@ export default function Special() {
   const [pagesss, setPage] = useState(true);
 
   useEffect(() => {
-    Axios.get("http://localhost:3000/getnewspecialsdata")
+    Axios.get("https://kuret-app-api.onrender.com/getnewspecialsdata")
       .then((res) => {
         res.data.forEach((element) => {
           const base64String = btoa(
@@ -47,7 +47,7 @@ export default function Special() {
       })
       .catch((err) => console.log(err, "it has an error"));
 
-    Axios.get("http://localhost:3000/gettrendingspecialsdata")
+    Axios.get("https://kuret-app-api.onrender.com/gettrendingspecialsdata")
       .then((res) => {
         res.data.forEach((element) => {
           const base64String = btoa(

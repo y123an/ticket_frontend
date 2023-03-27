@@ -35,7 +35,7 @@ export default function Concert() {
   const [pagesss, setPage] = useState(true);
 
   useEffect(() => {
-    Axios.get("http://localhost:3000/getnewconcertsdata")
+    Axios.get("https://kuret-app-api.onrender.com/getnewconcertsdata")
       .then((res) => {
         res.data.forEach((element) => {
           const base64String = btoa(
@@ -47,7 +47,7 @@ export default function Concert() {
       })
       .catch((err) => console.log(err, "it has an error"));
 
-    Axios.get("http://localhost:3000/gettrendingconcertsdata")
+    Axios.get("https://kuret-app-api.onrender.com/gettrendingconcertsdata")
       .then((res) => {
         res.data.forEach((element) => {
           const base64String = btoa(

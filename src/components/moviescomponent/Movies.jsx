@@ -35,7 +35,7 @@ export default function Movies() {
   const [pagesss, setPage] = useState(true);
 
   useEffect(() => {
-    Axios.get("http://localhost:3000/getnewmoviesdata")
+    Axios.get("https://kuret-app-api.onrender.com/getnewmoviesdata")
       .then((res) => {
         res.data.forEach((element) => {
           const base64String = btoa(
@@ -47,7 +47,7 @@ export default function Movies() {
       })
       .catch((err) => console.log(err, "it has an error"));
 
-    Axios.get("http://localhost:3000/gettrendingmoviesdata")
+    Axios.get("https://kuret-app-api.onrender.com/gettrendingmoviesdata")
       .then((res) => {
         res.data.forEach((element) => {
           const base64String = btoa(
