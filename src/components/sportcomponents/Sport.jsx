@@ -35,7 +35,7 @@ export default function Sport() {
   const [pagesss, setPage] = useState(true);
 
   useEffect(() => {
-    Axios.get("http://localhost:4000/getnewsportsdata")
+    Axios.get("https://kuret-app-api.onrender.com/getnewsportsdata")
       .then((res) => {
         res.data.forEach((element) => {
           const base64String = btoa(
