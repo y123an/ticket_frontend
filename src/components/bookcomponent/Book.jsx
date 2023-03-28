@@ -12,7 +12,7 @@ export default function Book(props) {
 
   return page ? (
     <div className="flex items-center justify-center  bg-slate-500">
-      <div className="content flex">
+      <div className="content flex max-md:flex-col">
         <div className="card flex items-center">
           <img
             className="w-[450px] h-[500px]"

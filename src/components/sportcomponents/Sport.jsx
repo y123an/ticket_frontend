@@ -111,7 +111,7 @@ export default function Sport() {
                     setBookImg(data);
                     setPage(false);
                   }}
-                  className="text-2xl ml-72 bg-yellow-400 p-1 mt-4 rounded-md text-white font-bold"
+                  className="text-2xl ml-[40%] bg-yellow-400 p-1 mt-4 rounded-md text-white font-bold"
                 >
                   Book
                 </button>
