@@ -1,13 +1,13 @@
 import "./App.css";
 import React from "react";
-import { createBrowserRouter, RouterProvider ,HashRouter} from "react-router-dom";
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from "./components/homecomponets/Home";
 import Movies from "./components/moviescomponent/Movies";
 import Sport from "./components/sportcomponents/Sport";
 import Concert from "./components/concertcomponenets/Concert";
 import Spacial from "./components/specialcompinent/Spacial";
 import Book from "./components/bookcomponent/Book";
-
+import Payment from "./components/payment/Payment";
 // creating the root routes
 
 const router = createBrowserRouter([
@@ -34,6 +34,9 @@ const router = createBrowserRouter([
   {
     path:"/book",
     element:<Book></Book>
+  },{
+    path:"/payment",
+    element:<Payment></Payment>
   }
 ]);
 
