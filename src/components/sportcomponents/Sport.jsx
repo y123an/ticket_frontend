@@ -22,10 +22,10 @@ export default function Sport() {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 564, min: 0 },
       items: 1,
     },
   };
@@ -35,7 +35,7 @@ export default function Sport() {
   const [pagesss, setPage] = useState(true);
 
   useEffect(() => {
-    Axios.get("https://kuret-app-api.onrender.com/getnewsportsdata")
+    Axios.get("http://localhost:4000/getnewsportsdata")
       .then((res) => {
         res.data.forEach((element) => {
           const base64String = btoa(
@@ -72,11 +72,11 @@ export default function Sport() {
           showDots={true}
           containerClass="container"
           keyBoardControl={true}
-          className=" w-[90%] p-16  bg-[#71BD26] rounded-lg" 
+          className=" w-[90%] p-16 bg-[#71BD26] rounded-lg " 
         >
           {newData.map((data, index) => {
             return (
-              <div>
+              <div className="max-sm:w-[50%] max-sm:h-auto">
                 <Card key={index} img={data} />
                 <button
                   type="submit"
@@ -84,7 +84,7 @@ export default function Sport() {
                     setBookImg(data);
                     setPage(false);
                   }}
-                  className="text-2xl ml-72 bg-yellow-400 p-1 mt-4 rounded-md text-white font-bold"
+                  className="text-2xl ml-[40%] bg-yellow-400 p-1 mt-4 rounded-md text-white font-bold"
                 >
                   Book
                 </button>
@@ -104,7 +104,7 @@ export default function Sport() {
         >
           {trendingData.map((data, index) => {
             return (
-              <div>
+              <div className="max-sm:w-[50%] max-sm:h-auto">
                 <Card key={index} img={data} />
                 <button
                   onClick={() => {

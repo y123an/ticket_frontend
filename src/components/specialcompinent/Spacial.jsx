@@ -76,7 +76,7 @@ export default function Special() {
         >
           {newData.map((data, index) => {
             return (
-              <div>
+              <div className="max-sm:w-[50%] max-sm:h-auto">
                 <Card key={index} img={data} />
                 <button
                   type="submit"
@@ -104,7 +104,7 @@ export default function Special() {
         >
           {trendingData.map((data, index) => {
             return (
-              <div>
+              <div className="max-sm:w-[50%] max-sm:h-auto">
                 <Card key={index} img={data} />
                 <button
                   onClick={() => {
