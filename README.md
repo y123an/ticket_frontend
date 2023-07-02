@@ -1,3 +1,6 @@
+## General Info
+- its a frontend of a ticket booking web app for movies, sports, concerts and other special events
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
