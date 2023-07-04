@@ -7,7 +7,7 @@ export default function Card(props) {
     <div className="w-auto h-[300px] rounded-lg overflow-hidden shadow-lg">
       <img
         className="w-[350px] h-[300px]"
-        src={`data:image/png;base64,${props.img}`}
+        src={`http://localhost:4000/getimage?name=${props.name}`}
         alt="Sunset in the mountains"
       />
     </div>

@@ -35,15 +35,9 @@ export default function Concert() {
   const [pagesss, setPage] = useState(true);
 
   useEffect(() => {
-    Axios.get("https://kuret-app-api.onrender.com/getnewconcertsdata")
+    Axios.get("http://kuret-app-api.onrender.com/getnewconcertsdata")
       .then((res) => {
-        res.data.forEach((element) => {
-          const base64String = btoa(
-            String.fromCharCode(...new Uint8Array(element.img.data.data))
-          );
-
-          setNewData((prev) => [...prev, base64String]);
-        });
+       setNewData(res.data)
       })
       .catch((err) => console.log(err, "it has an error"));
 
@@ -77,7 +71,7 @@ export default function Concert() {
           {newData.map((data, index) => {
             return (
               <div className="max-sm:w-[50%] max-sm:h-auto">
-                <Card key={index} img={data} />
+                <Card key={data._id} name={`concerts/new/${data.name}`} />
                 <button
                   type="submit"
                   onClick={() => {
@@ -105,7 +99,7 @@ export default function Concert() {
           {trendingData.map((data, index) => {
             return (
               <div className="max-sm:w-[50%] max-sm:h-auto">
-                <Card key={index} img={data} />
+                <Card key={data._id} name={`concerts/trending/${data.name}`} />
                 <button
                   onClick={() => {
                     setBookImg(data);

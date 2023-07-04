@@ -77,7 +77,7 @@ export default function Sport() {
           {newData.map((data, index) => {
             return (
               <div className="max-sm:w-[50%] max-sm:h-auto">
-                <Card key={index} img={data} />
+                <Card key={data._id} name={`sports/new/${data.name}`} />
                 <button
                   type="submit"
                   onClick={() => {
@@ -105,7 +105,7 @@ export default function Sport() {
           {trendingData.map((data, index) => {
             return (
               <div className="max-sm:w-[50%] max-sm:h-auto">
-                <Card key={index} img={data} />
+                 <Card key={data._id} name={`specials/trending/${data.name}`} />
                 <button
                   onClick={() => {
                     setBookImg(data);
