@@ -35,7 +35,7 @@ export default function Concert() {
   const [pagesss, setPage] = useState(true);
 
   useEffect(() => {
-    Axios.get("http://kuret-app-api.onrender.com/getnewconcertsdata")
+    Axios.get("https://kuret-app-api.onrender.com/getnewconcertsdata")
       .then((res) => {
        setNewData(res.data)
       })
